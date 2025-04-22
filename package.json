@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "build": "esbuild src --bundle --outdir=build --platform=browser",
+  "watch": "esbuild src --bundle --outdir=build --platform=browser --watch",
+  "lint": "eslint src --ext .js,.ts",
+  "test": "jest"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UpdatingSG/ai-code-reviewer-extension.git"
